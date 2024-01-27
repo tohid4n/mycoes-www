@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Make an Offer to MyCoes{% endblock title %}
+{% block meta_description %}Submit your web development requirements and make an offer. We will review your needs and provide a tailored solution. Take the first step towards achieving your online goals with MyCoes.{% endblock meta_description %}
+
+{% block content %}
+
+
+<div class="m-auto w-11/12 md:w-10/12 lg:w-7/12 flex justify-center">
+<div class="mt-28 mb-16 w-full">
+
+
+
+ 
+<form method="POST">
+  {% csrf_token %}
+ 
+  {% for field in form %}
+  <div class="mt-6 sm:m-8">
+    <label for="{{ field.id_for_label }}" class="block font-Content text-3xl font-normal text-black dark:text-white mb-5">{{ field.label }}</label>
+    {{ field }}
+  </div>
+{% endfor %}
+
+
+  
+<div class="sm:mt-14 sm:mr-16">
+  <button type="submit" class="text-xl font-Inter font-normal text-white dark:text-black bg-black dark:bg-white py-5 tracking-wide text-center w-full  hover:bg-slate-900 dark:hover:bg-slate-100 sm:ml-8 ">Make offer</button>
+</div>
+</form>
+
+
+</div>
+</div>
+
+
+
+
+{% endblock content %}

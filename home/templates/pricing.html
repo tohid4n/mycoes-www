@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Web Development Services On Affordable Price{% endblock title %}
+{% block meta_description %}Avail our web development services at affordable prices. We follow industry standards, accepting payments in milestones. Our hourly rates range from $50 to $75. Contact us to discuss budget alignment and payment options. Get in touch now to learn more and secure your pricing.{% endblock meta_description %}
+
+{% block content %}
+
+
+
+<div class="m-auto w-full md:w-10/12 lg:w-9/12 flex justify-center">
+    <div>
+
+     <div class="mt-28 mb-24 sm:mt-40 sm:mb-24 border-b border-black dark:border-white">
+   <div>
+     <h1 class="text-5xl sm:text-6xl font-Inter font-bold tracking-wide leading-tight sm:leading-normal text-black dark:text-white m-4">Project Level Pricing</h1>
+   </div>
+   <div>
+     <p class="text-xl font-Content font-normal leading-relaxed text-black dark:text-white m-4">Our project-level pricing is designed to align with industry standards, following a milestone-based payment approach. Payments are made as each milestone of the project is completed. Contact us to discuss your project requirements and to receive a customized quote that fits your budget.</p>
+   </div>
+   
+   <div class="my-12">
+     <a href="{% url 'home:contact' %}" class="text-xl font-Inter font-light text-white dark:text-black bg-black dark:bg-white py-5 px-24 xsm:px-28 m-4 hover:bg-slate-900 dark:hover:bg-slate-100">Contact us</a>
+   </div>
+   </div>
+
+
+
+   <div class="mt-10 mb-20 sm:my-20 border-b border-black dark:border-white">
+    <div>
+      <h1 class="text-5xl sm:text-6xl font-Inter font-bold tracking-wide leading-tight sm:leading-normal text-black dark:text-white m-4">Hourly Rate Pricing</h1>
+    </div>
+    <div>
+      <p class="text-xl font-Content font-normal leading-relaxed text-black dark:text-white m-4">If you prefer more flexibility, we also offer an hourly rate pricing option. Our experienced team can assist you on an hourly basis, charging between $50 to $75 per hour. Contact us to discuss your project details and estimate the number of hours required.</p>
+    </div>
+    
+    <div class="my-12">
+      <a href="{% url 'home:contact' %}" class="text-xl font-Inter font-light text-white dark:text-black bg-black dark:bg-white py-5 px-24 xsm:px-28 m-4 hover:bg-slate-900 dark:hover:bg-slate-100">Contact us</a>
+    </div>
+    </div>
+
+
+   </div>
+   </div>
+
+  
+{% endblock content %}

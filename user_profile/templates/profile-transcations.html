@@ -1,0 +1,124 @@
+{% extends 'profile.html' %}
+
+{% block profile-content %}
+      
+<div class="mx-4 mb-20 z-50">
+    <!-- Offer content -->
+    
+    
+    {% if transactions %}
+        
+            <div class="mb-12 mt-4 pb-6 border-b border-black dark:border-gray-400">
+                <div>
+                    <p class="text-4xl md:text-5xl leading-snug md:leading-snug font-Inter font-bold tracking-wide text-black dark:text-white">Transactions</p>
+                </div>
+            
+                
+                 <!-- Pricing related -->
+                <div class="relative w-full overflow-x-auto mt-10 border border-black dark:border-gray-400">
+                    <table class="w-full text-sm text-left rtl:text-right text-black dark:text-gray-400">
+                        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-black dark:text-gray-400 border-b border-black dark:border-gray-400">
+                            <tr>
+                                <th scope="col" class="px-6 py-3">Transaction ID</th>
+                                <th scope="col" class="px-6 py-3">Title</th>
+                                <th scope="col" class="px-6 py-3">Amount</th>
+                                <th scope="col" class="px-6 py-3">Milestone Number</th>
+                                <th scope="col" class="px-6 py-3">Milestone ID</th>
+                                <th scope="col" class="px-6 py-3">Transaction Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for transaction in transactions %}
+                                <tr class="bg-white border-b dark:bg-black dark:border-gray-700">
+                                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        {{ transaction.transaction_id }}
+                                    </th>
+                                    <td class="px-6 py-4">
+                                        {{ transaction.offer.title }}
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        ${{ transaction.ammount }}
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        {{ transaction.milestone_number }}
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        {{ transaction.id }}
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        {{ transaction.transaction_date }}
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+        
+            <!-- Communication platforms related -->
+<div>
+    <div class="mt-12">
+        <div class="text-2xl md:text-3xl font-Lato font-bold text-black dark:text-white"><p>Communication platforms</p></div>
+    </div>
+    
+    <div class="flex flex-wrap gap-4 md:gap-10 m-2 mt-8">  
+        <div class="w-60">
+            <a href="https://wa.me/918431944801?text=Hello%20from%20websiteWhatsapp" class="py-2 px-4 border border-black dark:border-gray-300 rounded-full flex items-center w-full hover:bg-slate-100 dark:hover:bg-slate-950">
+                <?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg"  class="h-10 w-10 fill-black dark:fill-white" alt="Whatsapp" viewBox="0 0 50 50" width="25px" height="25px">    <path d="M25,2C12.318,2,2,12.318,2,25c0,3.96,1.023,7.854,2.963,11.29L2.037,46.73c-0.096,0.343-0.003,0.711,0.245,0.966 C2.473,47.893,2.733,48,3,48c0.08,0,0.161-0.01,0.24-0.029l10.896-2.699C17.463,47.058,21.21,48,25,48c12.682,0,23-10.318,23-23 S37.682,2,25,2z M36.57,33.116c-0.492,1.362-2.852,2.605-3.986,2.772c-1.018,0.149-2.306,0.213-3.72-0.231 c-0.857-0.27-1.957-0.628-3.366-1.229c-5.923-2.526-9.791-8.415-10.087-8.804C15.116,25.235,13,22.463,13,19.594 s1.525-4.28,2.067-4.864c0.542-0.584,1.181-0.73,1.575-0.73s0.787,0.005,1.132,0.021c0.363,0.018,0.85-0.137,1.329,1.001 c0.492,1.168,1.673,4.037,1.819,4.33c0.148,0.292,0.246,0.633,0.05,1.022c-0.196,0.389-0.294,0.632-0.59,0.973 s-0.62,0.76-0.886,1.022c-0.296,0.291-0.603,0.606-0.259,1.19c0.344,0.584,1.529,2.493,3.285,4.039 c2.255,1.986,4.158,2.602,4.748,2.894c0.59,0.292,0.935,0.243,1.279-0.146c0.344-0.39,1.476-1.703,1.869-2.286 s0.787-0.487,1.329-0.292c0.542,0.194,3.445,1.604,4.035,1.896c0.59,0.292,0.984,0.438,1.132,0.681 C37.062,30.587,37.062,31.755,36.57,33.116z"/></svg>
+                <p class="text-xl font-medium ml-4 text-black dark:text-white">Whatsapp</p>
+              </a>
+        </div>
+    
+    
+        <div class="w-60">
+            <a href="https://discord.gg/e3tkke4AQE" class="py-2 px-4 border border-black dark:border-gray-300 rounded-full flex items-center w-full hover:bg-slate-100 dark:hover:bg-slate-950">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 fill-black dark:fill-white" viewBox="0 0 127.14 96.36"><path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"/></svg>
+                <p class="text-xl font-medium ml-4 text-black dark:text-white">Discord</p>
+              </a>
+        </div>
+    
+    
+        <div class="w-60">
+            <a href="https://teams.live.com/l/invite/FEAY_545gm0xbaRvQE" class="py-2 px-4 border border-black dark:border-gray-300 rounded-full flex items-center w-full hover:bg-slate-100 dark:hover:bg-slate-950">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 fill-black dark:fill-white" alt="" viewBox="0 0 30 30" width="25px" height="25px"><path d="M 16.5 3 A 3.5 3.5 0 0 0 13.339844 8 L 4 8 C 2.895 8 2 8.895 2 10 L 2 20 C 2 21.105 2.895 22 4 22 L 14 22 C 15.105 22 16 21.105 16 20 L 16 10 C 16 9.987256 15.996331 9.9755777 15.996094 9.9628906 A 3.5 3.5 0 0 0 16.5 10 A 3.5 3.5 0 1 0 16.5 3 z M 24 5 A 2.5 2.5 0 0 0 24 10 A 2.5 2.5 0 0 0 24 5 z M 6 11 L 8.5 11 L 9.5 11 L 12 11 L 12 12 L 9.5 12 L 9.5 19 L 8.5 19 L 8.5 12 L 6 12 L 6 11 z M 18 12 L 18 20 C 18 22.21 16.21 24 14 24 L 11.019531 24 C 12.179531 25.8 14.2 27 16.5 27 C 20.09 27 23 24.09 23 20.5 L 23 14 C 23 12.9 22.1 12 21 12 L 18 12 z M 24.460938 12 C 24.800938 12.59 25 13.27 25 14 L 25 20.5 C 25 21.35 24.880625 22.169453 24.640625 22.939453 C 26.550625 22.639453 28 20.99 28 19 L 28 14 C 28 12.9 27.1 12 26 12 L 24.460938 12 z"/></svg>
+                <p class="text-xl font-medium ml-4 text-black dark:text-white">Microsoft Teams</p>
+              </a>
+        </div>
+    
+    
+        <div class="w-60">
+            <a href="https://app.slack.com/huddle/T05USEC8WTF/C065XRER92T" class="py-2 px-4 border border-black dark:border-gray-300 rounded-full flex items-center w-full hover:bg-slate-100 dark:hover:bg-slate-950">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 fill-black dark:fill-white" alt="" viewBox="0 0 50 50" width="25px" height="25px"><path d="M31 24c-2.757 0-5-2.243-5-5V7c0-2.757 2.243-5 5-5s5 2.243 5 5v12C36 21.757 33.757 24 31 24zM43 24h-4c-.553 0-1-.447-1-1v-4c0-2.757 2.243-5 5-5s5 2.243 5 5S45.757 24 43 24zM19 24H7c-2.757 0-5-2.243-5-5s2.243-5 5-5h12c2.757 0 5 2.243 5 5S21.757 24 19 24zM23 12h-4c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5v4C24 11.553 23.553 12 23 12zM19 48c-2.757 0-5-2.243-5-5V31c0-2.757 2.243-5 5-5s5 2.243 5 5v12C24 45.757 21.757 48 19 48zM7 36c-2.757 0-5-2.243-5-5s2.243-5 5-5h4c.553 0 1 .447 1 1v4C12 33.757 9.757 36 7 36zM43 36H31c-2.757 0-5-2.243-5-5s2.243-5 5-5h12c2.757 0 5 2.243 5 5S45.757 36 43 36zM31 48c-2.757 0-5-2.243-5-5v-4c0-.553.447-1 1-1h4c2.757 0 5 2.243 5 5S33.757 48 31 48z"/></svg>
+                <p class="text-xl font-medium ml-4 text-black dark:text-white">Slack</p>
+              </a>
+        </div>
+        </div>
+    </div>
+
+
+
+        {% else %}
+                <div class="sm:mt-32">
+                    <div>
+                        <div>
+                            <p class="text-5xl md:text-6xl leading-snug md:leading-snug font-Inter font-bold tracking-wide text-black dark:text-white">You don't have any Transactions yet.</p>
+                        </div>
+                        <div class="flex gap-4 xl:gap-12 max-xl:flex-col flex-row lg:ml-2">
+
+
+                            <div class="my-12">
+                                <a href="{% url 'user_profile:offers-billing' %}" class="text-xl font-Inter font-light text-white dark:text-black bg-black dark:bg-white py-5 px-24 hover:bg-slate-900 dark:hover:bg-slate-100 border border-black dark:border-white rounded-full">Offers & Billing</a>
+                            </div>
+                           
+                            <div class="xl:my-12">
+                                <a href="{% url 'home:contact' %}" class="text-xl font-Inter font-light text-black dark:text-white border border-black dark:border-white py-5 px-24 rounded-full hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black">Contact us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+       
+
+{% endblock profile-content %}

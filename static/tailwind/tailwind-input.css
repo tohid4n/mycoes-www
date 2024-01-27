@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    .word-spacing {
+        word-spacing: 1rem;
+    }
+
+    .contact_classes {
+        @apply bg-white dark:bg-black border border-black dark:border-gray-300 text-2xl font-Roboto font-light text-black dark:text-white focus:ring-black focus:border-black  block w-full p-2.5 dark:focus:ring-white dark:focus:border-white mb-10
+    }
+
+    .offer_form_input_classes {
+        @apply bg-white dark:bg-black border border-black dark:border-gray-300 text-2xl font-Roboto font-light text-black dark:text-white focus:ring-black focus:border-black  block w-full p-2.5 dark:focus:ring-white dark:focus:border-white mb-10
+    }
+
+    .offer_form_area_input_classes {
+        @apply bg-white dark:bg-black border border-black dark:border-gray-300 text-2xl font-Roboto font-light text-black dark:text-white focus:ring-black focus:border-black  block w-full p-2.5 dark:focus:ring-white dark:focus:border-white mb-10
+    }
+
+
+    .about_contact_class {
+        @apply h-40 bg-white dark:bg-black border border-black dark:border-gray-300 text-2xl font-Roboto font-light text-black dark:text-white focus:ring-black focus:border-black  block w-full p-2.5 dark:focus:ring-white dark:focus:border-white mb-10
+    }
+
+
+    .label_classes {
+        @apply block mb-2 font-OpenSans text-xl font-normal text-black dark:text-white
+    }
+    
+    .text_feedback {
+        @apply font-OpenSans block w-full align-middle rounded-xl h-14 text-black dark:text-white focus:outline-none focus:ring-0 border-none resize-none p-3 no-scrollbar dark:bg-black
+    }  
+    
+    .dark-shadow {
+        @apply shadow-[inset_0px_0px_300px_-103px_rgba(0,0,0,1)];
+        -webkit-box-shadow: inset 0px 0px 300px -103px rgba(0, 0, 0, 1);
+        -moz-box-shadow: inset 0px 0px 300px -103px rgba(0, 0, 0, 1);
+    }
+      
+      
+    .white-shadow {
+        @apply shadow-[inset_0px_0px_300px_-103px_rgba(255,255,255,0.96)];
+        -webkit-box-shadow: inset 0px 0px 300px -103px rgba(255, 255, 255, 0.96);
+        -moz-box-shadow: inset 0px 0px 300px -103px rgba(255, 255, 255, 0.96);
+    }
+    
+    #navbar.scrolled {
+       @apply bg-white dark:bg-black 
+      }
+
+}
+
+
+@layer utilities {
+    @variants responsive {
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+      }
+    }
+  }

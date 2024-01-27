@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Contact MyCoes{% endblock title %}
+{% block meta_description %}Feel free to contact MyCoes. We are here to assist you with any inquiries or assistance you may need. Get in touch with us today for more reliable support.{% endblock meta_description %}
+{% block content %}
+
+<div class="mt-28 mb-16">
+<div class="flex justify-center items-center flex-col md:flex-row w-full sm:w-9/12 m-auto">
+
+<div class="m-4 w-11/12 flex justify-center sm:hidden xl:inline">
+  <div>
+  <div><h1 class="text-5xl exsm:text-6xl lg:text-7xl xl:text-8xl font-Lexend font-bold leading-tight text-black dark:text-white sm:mb-6">Feel free to Contact us .</h1></div>
+  <div><p class="text-4xl lg:text-5xl font-OpenSans font-normal leading-normal text-black dark:text-white">We are here for You.</p></div>
+</div>
+</div>
+
+  <div class="flex justify-center w-full lg:w-11/12">
+    <div class="m-4">
+    
+        <form method="POST">
+            {% csrf_token %}
+            {% for field in form %}
+              <div class="mt-4 sm:m-4">
+                <label for="{{ field.id_for_label }}" class="block mb-4 font-OpenSans text-3xl font-normal text-black dark:text-white">{{ field.label }}</label>
+                {{ field }}
+              </div>
+            {% endfor %}
+            <div class="sm:mx-4">
+              <button type="submit" class="text-xl font-Inter font-normal text-white dark:text-black bg-black dark:bg-white py-5 tracking-wide text-center w-full hover:bg-slate-900 dark:hover:bg-slate-100">Contact</button>
+            </div>
+            
+          </form>
+    
+    </div>
+    </div>
+    
+</div>
+</div>
+  
+{% endblock content %} 

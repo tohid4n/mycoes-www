@@ -1,0 +1,443 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load cookie_consent_tags %}
+{% block title %}A Web Development Agency Focus on Goals{% endblock title %}
+{% block meta_description %}A Goal-oriented web development agency that delivers better user experiences, designs, and solutions. Explore our services, including website development, design, and hosting. Learn how our process works and check out our FAQs. Contact us to achieve your website's goals today.{% endblock meta_description %}
+{% block content %}
+
+<!-- Hero section -->
+
+
+  <div class="bg-black mt-32 mb-10 xsm:mt-40 xsm:mb-24 md:mt-48">
+  <div class="m-auto w-full md:w-10/12 lg:w-10/12">
+    
+    <div>
+      <h1 class="text-9xl text-white font-Inter">Do You Need A Website?
+        I Have Interesting Plans For You!</h1>
+    </div>
+    
+</div>  
+</div>  
+
+
+<div id="scrollToBottom" class="hidden sm:block scroll-to-bottom fixed left-1/2 transform -translate-x-1/2 bottom-8 bg-black dark:bg-white p-3 rounded-full cursor-pointer z-30">
+  <svg class="fill-white dark:fill-black" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+      <path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z"/>
+  </svg>
+</div>
+
+
+
+
+
+
+  <!-- About us Section -->
+ 
+ 
+  <div class="bg-white dark:bg-black w-full flex justify-center">
+   <div class="m-auto w-full md:w-10/12 lg:w-9/12 pb-12 flex justify-center flex-col-reverse lg:flex-row items-center gap-8">
+    <div>
+     <div><h2 class="text-4xl sm:text-6xl font-Content font-bold leading-tight sm:leading-snug tracking-wide text-black dark:text-white m-4">About MyCoes</h2></div>
+     <div><p class="text-xl sm:text-2xl font-OpenSans font-normal leading-normal sm:leading-snug tracking-wide text-black dark:text-white m-4">MyCoes is all about building great user experience and design with new things that serve the goals of, those who want to achieve them. A better pricing model that benefits the achiever, with MyCoes.</p></div>
+     <div class="my-12">
+      <a href="{% url 'home:about' %}" class="text-xl font-Inter font-light text-black dark:text-white py-5 px-24 xsm:px-40 m-4 border border-black dark:border-gray-300 hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black max-xsm:rounded-full">Learn More</a>
+     </div>
+    </div>
+   </div>
+   </div>
+  
+ 
+    <!-- MyCoes offer Section -->
+
+   <div class="bg-black dark:bg-white w-full flex justify-center mb-10 py-10 sm:py-20">
+    <div class="m-auto w-full md:w-10/12 lg:w-9/12 flex justify-center flex-col-reverse lg:flex-row items-center gap-8">
+     <div>
+
+      <div><h2 class="text-4xl sm:text-6xl font-inter font-bold leading-tight sm:leading-snug tracking-wide text-white dark:text-black m-4">Offer valid for the next 7 days only!</h2></div>
+      <div><p class="text-xl sm:text-3xl font-Roboto font-light leading-snug sm:leading-snug tracking-wide text-white dark:text-black m-4">Thousands of dollar's services are just for free.  The offer is limited to only  Five people.</p></div>
+      <div class="my-12">
+        <a href="{% url 'home:e-offer' %}" class="text-xl font-Inter font-light text-black dark:text-white bg-white dark:bg-black py-5 px-16 xsm:px-28 m-4 hover:bg-slate-100 dark:hover:bg-slate-900 max-xsm:rounded-full">Register Now</a>
+       </div>
+    </div>
+    </div>
+    </div>
+
+
+     <!-- Services's Section -->
+
+   <div class="m-auto w-full md:w-10/12 lg:w-9/12 my-20">
+
+    <div>
+      <h2 class="text-5xl sm:text-6xl font-OpenSans font-bold tracking-wide text-black dark:text-white m-4">Services</h2>
+          </div>
+      
+    <div class="mb-12 mx-4">
+
+    
+    <div class="flex max-sm:flex-col sm:overflow-x-auto no-scrollbar items-center my-12 w-full gap-10 sm:mx-4">
+      
+      <div class="border border-black dark:border-gray-300 p-4 flex flex-shrink-0 items-center justify-center h-80 w-full sm:h-96 sm:w-96">
+        <div>
+        <div><h3 class="text-4xl sm:text-5xl font-OpenSans font-bold leading-snug sm:leading-snug tracking-wide text-black dark:text-white m-4">Web Design(UI, UX)</h3></div>
+        <div><p class="text-xl font-OpenSans font-normal tracking-wide text-black dark:text-white m-4">With beautiful UI, and better User-Experience we design your website like is it ours. </p></div>
+      </div>
+      </div>
+
+
+      <div class="border border-black dark:border-gray-300 p-4 flex flex-shrink-0 items-center justify-center h-80 w-full sm:h-96 sm:w-96">
+        <div>
+        <div><h3 class="text-4xl sm:text-5xl font-OpenSans font-bold leading-snug sm:leading-snug tracking-wide text-black dark:text-white m-4">Content creation & SEO</h3></div>
+        <div><p class="text-xl font-OpenSans font-normal tracking-wide text-black dark:text-white m-4">A website with better onsite SEO and Content riches to its end users we help you to build.</p></div>
+      </div>
+      </div>
+
+
+      <div class="border border-black dark:border-gray-300 p-4 flex flex-shrink-0 items-center justify-center h-80 w-full sm:h-96 sm:w-96 sm:mr-8">
+        <div>
+        <div><h3 class="text-4xl sm:text-5xl font-OpenSans font-bold leading-snug sm:leading-snug tracking-wide text-black dark:text-white m-4">Web Development</h3></div>
+        <div><p class="text-xl font-OpenSans font-normal tracking-wide text-black dark:text-white m-4">Speed, Responsiveness, and new web development technologies are packed into this service.</p></div>
+      </div>
+      </div>
+
+    </div>
+ 
+
+    <div class="mt-16 md:mx-4 w-full">
+      <a href="{% url 'home:services' %}" class="text-black dark:text-white hover:text-white dark:hover:text-black">
+      <div class="text-center w-full py-5 sm:py-6 border border-black dark:border-gray-300 hover:bg-black dark:hover:bg-white">
+        <p class="text-xl sm:text-2xl font-Inter font-light">View Services</p>
+      </div>
+    </a>
+  </div>
+    
+  </div>
+  </div>
+ 
+
+
+     <!-- Carousel section -->
+
+     <div class="border-b border-t border-gray-400 dark:border-gray-700 my-10 flex items-center">
+ <div class="m-auto w-full md:w-10/12 lg:w-9/12">
+  <div class="mb-10 mt-16">
+
+  <div>
+    <h2 class="text-4xl sm:text-5xl md:text-6xl font-Inter font-normal tracking-wide text-black dark:text-white text-center m-4">How it works?</h2>
+  </div>
+    
+
+<div id="controls-carousel" class="relative w-full text-center" data-carousel="static">
+  <!-- Carousel wrapper -->
+  <div class="h-60 m-auto w-full md:w-10/12">
+  <div class="relative h-full overflow-hidden rounded-lg">
+       <!-- Item 1 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+       
+        <div class="text-center absolute inset-0 flex items-center justify-center">
+          <div>
+          <div><h3 class="text-2xl sm:text-3xl xl:text-4xl font-OpenSans font-bold leading-snug sm:leading-snug xl:leading-snug tracking-wide text-black dark:text-white m-4">1  Let’s have a discussion about what you want.</h3></div>
+          <div><p class="text-base sm:text-xl xl:text-2xl font-Content leading-snug sm:leading-snug xl:leading-snug tracking-wide text-black dark:text-white m-4">In our initial step, we take time to understand your unique needs and vision. It all begins with a friendly conversation. When you're ready to bring your ideas to life, please feel free to contact us. We're here to help.</p></div>
+         </div>
+        </div>
+      </div>
+      <!-- Item 2 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+        <div class="text-center absolute inset-0 flex items-center justify-center">
+          <div>
+            <div><h3 class="text-2xl sm:text-3xl xl:text-4xl font-OpenSans font-bold leading-snug sm:leading-snug xl:leading-snug tracking-wide text-black dark:text-white m-4">2 Sign Up to get the access.</h3></div>
+            <div><p class="text-base sm:text-xl xl:text-2xl font-Content leading-snug sm:leading-snug xl:leading-snug tracking-wide text-black dark:text-white m-4">To access your profile, including offers, transactions, and billing details, and to provide feedback, the second step is to sign up for an account with MyCoes. This ensures you have full access to our services and benefits.</p></div>
+          </div>
+        </div>
+      </div>
+      <!-- Item 3 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <div class="text-center absolute inset-0 flex items-center justify-center">
+         <div>
+          <div><h3 class="text-2xl sm:text-3xl xl:text-4xl font-OpenSans font-bold leading-snug sm:leading-snug xl:leading-snug tracking-wide text-black dark:text-white m-4">3 Sign the contract.</h3></div>
+          <div><p class="text-base sm:text-xl xl:text-2xl font-Content leading-snug sm:leading-snug xl:leading-snug tracking-wide text-black dark:text-white m-4">For the mutual benefit of both parties, it's essential to formalize our commitment by signing the contract. This agreement marks the beginning of our collaborative journey, ensuring a successful start to your project.</p></div>
+          </div>
+         </div>
+      </div>
+      <!-- Item 4 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <div class="text-center absolute inset-0 flex items-center justify-center">
+        <div>
+          <div><h3 class="text-2xl sm:text-3xl xl:text-4xl font-OpenSans font-bold leading-snug sm:leading-snug xl:leading-snug tracking-wide text-black dark:text-white m-4">4 Pay As Work Progresses</h3></div>
+          <div><p class="text-base sm:text-xl xl:text-2xl font-Content leading-snug sm:leading-snug xl:leading-snug tracking-wide text-black dark:text-white m-4">You'll make payments in alignment with project milestones outlined in the contract. This flexible payment structure ensures that you pay for the work completed as it progresses, providing transparency and financial control.</p></div>
+         </div>
+         </div>
+      </div>
+      <!-- Item 5 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <div class="text-center absolute inset-0 flex items-center justify-center">
+        <div>
+          <div><h3 class="text-2xl sm:text-3xl xl:text-4xl font-OpenSans font-bold leading-snug sm:leading-snug xl:leading-snug tracking-wide text-black dark:text-white m-4">5 Get your things.</h3></div>
+          <div><p class="text-base sm:text-xl xl:text-2xl font-Content leading-snug sm:leading-snug xl:leading-snug tracking-wide text-black dark:text-white m-4">Once the project is complete, you'll receive all the agreed-upon deliverables. This step ensures that you have everything you need to kickstart your online journey with confidence and success.</p></div>
+         </div>
+         </div>
+      </div>
+
+  </div>
+</div>
+  
+  <!-- Slider controls -->
+  <div class="max-md:relative">
+  <button type="button" class="absolute max-md:bottom-0 max-xsm:left-0 max-md:right-20 md:top-0 md:left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+    <span class="inline-flex items-center justify-center w-10 h-10 max-md:bg-slate-300 dark:bg-transparent rounded-full">
+      <svg class="w-30 h-30 fill-black dark:fill-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg>
+        <span class="sr-only">Previous</span>
+    </span>
+</button>
+<button type="button" class="absolute max-md:bottom-0 right-0 md:top-0 md:right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full max-md:bg-slate-300 dark:bg-transparent">
+      <svg class="w-30 h-30 fill-black dark:fill-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>  <span class="sr-only">Next</span>
+    </span>
+</button>
+</div>
+
+
+</div>
+
+</div>
+</div>
+
+
+</div>
+
+
+       <!-- FAQ's Section -->
+    
+<div class="m-auto w-full md:w-10/12 lg:w-9/12 flex justify-center">
+
+  <div class="w-full mx-4 mb-20 mt-10">
+
+    <div>
+      <p class="text-4xl md:text-5xl font-Inter font-light text-black dark:text-white mb-6">FAQ’s</p>
+    </div>
+
+<div id="accordion-flush" data-accordion="collapse" data-active-classes="text-black dark:text-white" data-inactive-classes="text-black dark:text-white">
+  <h2 id="accordion-flush-heading-1">
+    <button type="button" class="flex items-center justify-between w-full py-5 text-left border-b border-gray-600 dark:border-gray-500" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
+      <span class="font-light text-xl sm:text-2xl font-OpenSans leading-normal sm:leading-normal tracking-wide text-black dark:text-white">How does MyCoes help me build my website?</span>
+      <svg data-accordion-icon class="rotate-180 shrink-0 fill-black dark:fill-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+    </button>
+  </h2>
+  <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
+    <div class="py-5 border-b border-gray-600 dark:border-gray-500">
+      <p class="mb-2 text-base sm:text-lg font-OpenSans font-normal text-gray-800 leading-normal sm:leading-normal tracking-wide dark:text-white">MyCoes simplifies website development with expert design, robust development, reliable  and content creation. We customize solutions for a visually appealing site, ensuring quality and affordability. Partner with us for a successful online presence.</p>
+    </div>
+  </div>
+
+
+  <h2 id="accordion-flush-heading-2">
+    <button type="button" class="flex items-center justify-between w-full py-5 text-left border-b border-gray-600 dark:border-gray-500" data-accordion-target="#accordion-flush-body-2" aria-expanded="true" aria-controls="accordion-flush-body-2">
+      <span class="font-light text-xl sm:text-2xl font-OpenSans leading-normal sm:leading-normal tracking-wide text-black dark:text-white">What services does MyCoes provide?</span>
+      <svg data-accordion-icon class="rotate-180 shrink-0 fill-black dark:fill-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+    </button>
+  </h2>
+  <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+    <div class="py-5 border-b border-gray-600 dark:border-gray-500">
+      <p class="mb-2 text-base sm:text-lg font-OpenSans font-normal text-gray-800 leading-normal sm:leading-normal tracking-wide dark:text-white">MyCoes offers a comprehensive suite of services, including web design, content writing, on-site SEO, and web development. We're your one-stop solution for crafting, optimizing, and launching your online presence.</p>
+      <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+        <li><a href="home:services" class="text-blue-600 dark:text-blue-500 hover:underline">View Services</a></li>
+       </ul>
+    </div>
+  </div>
+
+
+  <h2 id="accordion-flush-heading-3">
+    <button type="button" class="flex items-center justify-between w-full py-5 text-left border-b border-gray-600 dark:border-gray-500" data-accordion-target="#accordion-flush-body-3" aria-expanded="true" aria-controls="accordion-flush-body-3">
+      <span class="font-light text-xl sm:text-2xl font-OpenSans leading-normal sm:leading-normal tracking-wide text-black dark:text-white">How does the pricing work?</span>
+      <svg data-accordion-icon class="rotate-180 shrink-0 fill-black dark:fill-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+    </button>
+  </h2>
+  <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
+    <div class="py-5 border-b border-gray-600 dark:border-gray-500">
+      <p class="mb-2 text-base sm:text-lg font-OpenSans font-normal text-gray-800 leading-normal sm:leading-normal tracking-wide dark:text-white">MyCoes provides two pricing options: one exclusively for previous customers and the other is our step-pay model, following industry standards in web development. These choices ensure flexibility and affordability for all clients.</p>
+      <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+        <li><a href="home:services" class="text-blue-600 dark:text-blue-500 hover:underline">View Pricing</a></li>
+       </ul>
+    </div>
+  </div>
+
+
+  <h2 id="accordion-flush-heading-4">
+    <button type="button" class="flex items-center justify-between w-full py-5 text-left border-b border-gray-600 dark:border-gray-500" data-accordion-target="#accordion-flush-body-4" aria-expanded="true" aria-controls="accordion-flush-body-4">
+      <span class="font-light text-xl sm:text-2xl font-OpenSans leading-normal sm:leading-normal tracking-wide text-black dark:text-white">How long it will take to build my website?</span>
+      <svg data-accordion-icon class="rotate-180 shrink-0 fill-black dark:fill-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+    </button>
+  </h2>
+  <div id="accordion-flush-body-4" class="hidden" aria-labelledby="accordion-flush-heading-4">
+    <div class="py-5 border-b border-gray-600 dark:border-gray-500">
+      <p class="mb-2 text-base sm:text-lg font-OpenSans font-normal text-gray-800 leading-normal sm:leading-normal tracking-wide dark:text-white">The timeline for building your website depends on its complexity and your specific requirements. We'll work closely with you to establish a project schedule that ensures timely delivery while maintaining the highest quality standards. Contact us to discuss your project in detail.</p>
+    </div>
+  </div>
+
+
+</div>
+</div>
+</div> 
+
+
+
+
+
+{% comment %} 
+<div class="bg-white dark:bg-black w-full flex justify-center">
+  <div class="w-full md:w-10/12">
+
+
+   
+
+    <div >
+   <div data-aos="fade-up" data-aos-duration="3000" class="my-28 sm:w-11/12">
+    <h1 class="text-6xl xsm:text-7xl  xl:text-9xl font-inter font-normal text-black dark:text-white mx-4 hover:text-slate-800 dark:hover:text-slate-400 hover:cursor-pointer"><a href="{% url 'home:contact' %}">Creating Websites For Your Business Needs.</a></h1>
+  </div>
+</div>
+
+
+<div id="scrollToBottom" class="scroll-to-bottom fixed left-1/2 transform -translate-x-1/2 bottom-8 bg-black dark:bg-white p-3 rounded-full cursor-pointer z-30">
+  <svg class="fill-white dark:fill-black" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+      <path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z"/>
+  </svg>
+</div>
+
+
+
+
+
+<div >
+  <div data-aos="fade-up" data-aos-duration="3000" class="my-28 sm:w-11/12">
+   <h2 class="text-6xl xsm:text-7xl  xl:text-9xl font-Poppins font-thin text-black dark:text-white mx-4 hover:text-slate-800 dark:hover:text-slate-400 hover:cursor-pointer"><a href="{% url 'home:about' %}">Behind The Name Of MyCoes A Full-Stack Web Developer.</a></h2>
+ </div>
+</div>
+
+
+<div>
+  <div data-aos="fade-up" data-aos-duration="3000" class="my-28 sm:my-20 xl:my-28 sm:w-11/12">
+   <h2 class="text-6xl xsm:text-7xl  xl:text-9xl font-Inter font-normal text-black dark:text-white mx-4 hover:text-slate-800 dark:hover:text-slate-400 hover:cursor-pointer"><a href="{% url 'home:services' %}">Every Services You Need For Your Site, Is Here.</a></h2>
+ </div>
+</div>
+ 
+
+
+<div>
+  <div data-aos="fade-up" data-aos-duration="3000" class="mt-28 md:my-20 xl:my-28 sm:w-11/12">
+   <h2 class="text-6xl xsm:text-7xl  xl:text-9xl font-Poppins font-thin text-black dark:text-white mx-4 hover:text-slate-800 dark:hover:text-slate-400 hover:cursor-pointer"><a href="{% url 'home:pricing' %}">Not Too Much, Not Too Less. Just Perfect Pricing.</a></h2>
+ </div>
+</div>
+    
+
+<!-- Carousel -->
+
+<div class="my-10 flex items-center" data-aos="fade-up" data-aos-duration="3000">
+  <div class="w-full md:w-10/12 lg:w-9/12">
+   <div class="max-md:mb-10 max-md:mt-16">
+ <div id="controls-carousel" class="relative w-full" data-carousel="static">
+   <!-- Carousel wrapper -->
+   <div class="h-96 w-full md:w-11/12">
+   <div class="relative h-full overflow-hidden rounded-lg">
+
+<!-- Main -->
+<div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+  <div class="absolute inset-0 flex items-center">
+    <div>
+    <div><h3 class="text-6xl xsm:text-7xl xl:text-9xl font-Lato font-thin text-black dark:text-white mx-4">Want to Know How To Get Started?</h3></div>
+   </div>
+  </div>
+</div>
+
+        <!-- Item 1 -->
+       <div class="hidden duration-700 ease-in-out" data-carousel-item>
+         <div class="absolute inset-0 flex items-center">
+           <div>
+           <div><h3 class="text-6xl xsm:text-7xl  xl:text-9xl font-Lato font-thin text-black dark:text-white mx-4">1. What You Want To Build?</h3></div>
+          </div>
+         </div>
+       </div>
+
+       <!-- Item 2 -->
+       <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <div class="absolute inset-0 flex items-center">
+          <div>
+          <div><h3 class="text-6xl xsm:text-7xl  xl:text-9xl font-Lato font-thin text-black dark:text-white mx-4">2. Sign Up To Get Access.</h3></div>
+         </div>
+        </div>
+      </div>
+
+
+       <!-- Item 3 -->
+      
+       <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <div class="absolute inset-0 flex items-center">
+          <div>
+          <div><h3 class="text-6xl xsm:text-7xl  xl:text-9xl font-Lato font-thin text-black dark:text-white mx-4">3. Sign The Contract.</h3></div>
+         </div>
+        </div>
+      </div>
+
+       <!-- Item 4 -->
+       <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <div class="absolute inset-0 flex items-center">
+          <div>
+          <div><h3 class="text-6xl xsm:text-7xl  xl:text-9xl font-Lato font-thin text-black dark:text-white mx-4">4. Pay As Work Progresses.</h3></div>
+         </div>
+        </div>
+      </div>
+
+       <!-- Item 5 -->
+       <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <div class="absolute inset-0 flex items-center">
+          <div>
+          <div><h3 class="text-6xl xsm:text-7xl  xl:text-9xl font-Lato font-thin text-black dark:text-white mx-4">5. Get Your Things.</h3></div>
+         </div>
+        </div>
+      </div>
+
+ 
+   </div>
+ </div>
+   
+   <!-- Slider controls -->
+   <div class="max-md:relative">
+ <button type="button" class="absolute max-md:bottom-0 right-2/4 max-md:left-2/4 md:top-0 md:right-0 z-30 flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+     <span class="inline-flex items-center justify-center bg-black dark:bg-white p-3 rounded-full">
+      <svg class="fill-white dark:fill-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+        <span class="sr-only">Next</span>
+      </span>
+ </button>
+ </div>
+ 
+ 
+ </div>
+ </div>
+ </div>
+ </div>
+
+
+
+
+
+
+<div >
+  <div data-aos="fade-up" data-aos-duration="3000" class="my-28 sm:w-11/12">
+   <h1 class="text-6xl xsm:text-7xl  xl:text-9xl font-Poppins font-thin text-black dark:text-white mx-4 hover:text-slate-800 dark:hover:text-slate-400 hover:cursor-pointer"><a href="{% url 'home:e-offer' %}">Still, Here, We are Providing Free Services. Register Now!</a></h1>
+ </div>
+</div>
+
+
+
+<div >
+  <div data-aos="fade-up" data-aos-duration="3000" class="my-28 md:my-20 xl:my-36 sm:w-11/12">
+   <h1 class="text-6xl xsm:text-7xl  xl:text-9xl font-inter font-normal text-black dark:text-white mx-4 hover:text-slate-800 dark:hover:text-slate-400 hover:cursor-pointer"><a href="{% url 'support:home' %}">If You Need Any Support Without Contact.</a></h1>
+ </div>
+</div>
+
+  </div>
+  </div> {% endcomment %}
+ 
+    
+{% endblock content %}
+  
+
+
